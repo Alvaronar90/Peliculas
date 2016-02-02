@@ -1,5 +1,6 @@
 package com.example.estacionvl_tc_014.estrenos;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -69,6 +70,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        Intent intent = new Intent(this, segundaPantallaActivity.class);
+        intent.putExtra("nombre", data.get(position).getTitulo());
+        startActivity(intent);
 
     }
 }
