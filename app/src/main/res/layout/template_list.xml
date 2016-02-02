@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/img_h"
+        android:scaleType="centerCrop"
+        android:id="@+id/img"
+        android:src="#999999"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/img_h"
+        android:src="@drawable/mask"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Nombre Pelicula"
+        android:layout_alignBottom="@+id/img"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:padding="@dimen/small"
+        />
+
+     <ImageView
+         android:id="@+id/ic_score"
+         android:layout_width="@dimen/icon_size"
+         android:layout_height="@dimen/icon_size"
+         android:src="@drawable/ic_star"
+         android:layout_below="@+id/img"
+         android:layout_margin="@dimen/small"
+         />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/txt_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ic_score"
+        android:layout_alignBottom="@+id/ic_score"
+        android:text="5,5"
+        />
+
+    <ImageView
+        android:id="@+id/ic_time"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:src="@drawable/ic_alarm"
+        android:layout_below="@+id/ic_score"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginBottom="@dimen/small"
+        />
+
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/txt_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ic_time"
+        android:layout_alignBottom="@+id/ic_time"
+        android:text="160"
+
+        />
+
+</RelativeLayout>

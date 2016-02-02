@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Estrenos</string>
+    <string-array name="peliculas">
+        <item>Avatar</item>
+        <item>Batman vs Superman</item>
+        <item>StarWars</item>
+        <item>El gran Dinosaurio</item>
+
+    </string-array>
 </resources>
